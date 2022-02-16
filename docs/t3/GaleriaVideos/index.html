@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stilos.css">
+    <title>Galeria de Videos</title>
+</head>
+
+<body>
+    <div id="videos">
+        <div class="zonaV">
+            <video width="480" height="320" controls="controles" id="Video1">
+                <source src="Videos/Video1.mp4" type="video/mp4" />
+                <source src="Videos/musica.mp3" type="video/mp3" />
+            </video>
+            <br>
+            <button onclick="playVideo1();" class="btn btn-success">
+                Play <i class="glyphicon glyphicon-play"></i>
+            </button>
+            <button onclick="pauseVideo1();" class="btn btn-warning">
+                Pause <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button onclick="stopVideo1()" class="btn btn-danger">
+                Stop <i class="glyphicon glyphicon-stop"></i>
+            </button>
+            <button onclick="rewindVideo1();" class="btn btn-info">
+                Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+        </div>
+        <div class="zonaV">
+            <video width="480" height="320" controls="controles" id="Video2">
+                <source src="Videos/Video2.mp4" type="video/mp4" />
+            </video>
+            <br>
+            <button onclick="playVideo2();" class="btn btn-success">
+                Play <i class="glyphicon glyphicon-play"></i>
+            </button>
+            <button onclick="pauseVideo2();" class="btn btn-warning">
+                Pause <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button onclick="stopVideo2()" class="btn btn-danger">
+                Stop <i class="glyphicon glyphicon-stop"></i>
+            </button>
+            <button onclick="rewindVideo2();" class="btn btn-info">
+                Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+        </div>
+        <div class="zonaV">
+            <video width="480" height="320" controls="controles" id="Video3">
+                <source src="Videos/Video3.mp4" type="video/mp4" />
+            </video>
+            <br>
+            <button onclick="playVideo3();" class="btn btn-success">
+                Play <i class="glyphicon glyphicon-play"></i>
+            </button>
+            <button onclick="pauseVideo3();" class="btn btn-warning">
+                Pause <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button onclick="stopVideo3()" class="btn btn-danger">
+                Stop <i class="glyphicon glyphicon-stop"></i>
+            </button>
+            <button onclick="rewindVideo3();" class="btn btn-info">
+                Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+        </div>
+        <div class="zonaV">
+            <video width="480" height="320" controls="controles" id="Video4">
+                <source src="Videos/Video4.mp4" type="video/mp4" />
+            </video>
+            <br>
+            <button onclick="playVideo4();" class="btn btn-success">
+                Play <i class="glyphicon glyphicon-play"></i>
+            </button>
+            <button onclick="pauseVideo4();" class="btn btn-warning">
+                Pause <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button onclick="stopVideo4()" class="btn btn-danger">
+                Stop <i class="glyphicon glyphicon-stop"></i>
+            </button>
+            <button onclick="rewindVideo4();" class="btn btn-info">
+                Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+        </div>
+        <div class="zonaV">
+            <video width="480" height="320" controls="controles" id="Video5">
+                <source src="Videos/Video5.mp4" type="video/mp4" />
+            </video>
+            <br>
+            <button onclick="playVideo5();" class="btn btn-success">
+                Play <i class="glyphicon glyphicon-play"></i>
+            </button>
+            <button onclick="pauseVideo5();" class="btn btn-warning">
+                Pause <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button onclick="stopVideo5()" class="btn btn-danger">
+                Stop <i class="glyphicon glyphicon-stop"></i>
+            </button>
+            <button onclick="rewindVideo5();" class="btn btn-info">
+                Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+        </div>
+        <div class="zonaV">
+            <video width="480" height="320" controls="controles" id="Video6">
+                <source src="Videos/Video6.mp4" type="video/mp4" />
+            </video>
+            <br>
+            <button onclick="playVideo6();" class="btn btn-success">
+                Play <i class="glyphicon glyphicon-play"></i>
+            </button>
+            <button onclick="pauseVideo6();" class="btn btn-warning">
+                Pause <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button onclick="stopVideo6()" class="btn btn-danger">
+                Stop <i class="glyphicon glyphicon-stop"></i>
+            </button>
+            <button onclick="rewindVideo6();" class="btn btn-info">
+                Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+        </div>
+        <div class="zonaV">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f0T9s3cdwA4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="zonaV">
+            
+        </div>
+    </div>
+
+    <script>
+        video1 = document.querySelector('#Video1');
+        function playVideo1() {
+            video1.play();
+        }
+        function pauseVideo1() {
+            video1.pause();
+        }
+        function stopVideo1() {
+            video1.currentTime = 0;
+            video1.pause();
+        }
+        function rewindVideo1() {
+            video1.currentTime = 0;
+        }
+
+        video2 = document.querySelector('#Video2');
+        function playVideo2() {
+            video2.play();
+        }
+        function pauseVideo2() {
+            video2.pause();
+        }
+        function stopVideo2() {
+            video2.currentTime = 0;
+            video2.pause();
+        }
+        function rewindVideo2() {
+            video2.currentTime = 0;
+        }
+
+        video3 = document.querySelector('#Video3');
+        function playVideo3() {
+            video3.play();
+        }
+        function pauseVideo3() {
+            video3.pause();
+        }
+        function stopVideo3() {
+            video3.currentTime = 0;
+            video3.pause();
+        }
+        function rewindVideo3() {
+            video3.currentTime = 0;
+        }
+
+        video4 = document.querySelector('#Video4');
+        function playVideo4() {
+            video4.play();
+        }
+        function pauseVideo4() {
+            video4.pause();
+        }
+        function stopVideo4() {
+            video4.currentTime = 0;
+            video4.pause();
+        }
+        function rewindVideo4() {
+            video4.currentTime = 0;
+        }
+        video4 = document.querySelector('#Video4');
+        function playVideo4() {
+            video4.play();
+        }
+        function pauseVideo4() {
+            video4.pause();
+        }
+        function stopVideo4() {
+            video4.currentTime = 0;
+            video4.pause();
+        }
+        function rewindVideo4() {
+            video4.currentTime = 0;
+        }
+
+
+        video5 = document.querySelector('#Video5');
+        function playVideo5() {
+            video5.play();
+        }
+        function pauseVideo5() {
+            video5.pause();
+        }
+        function stopVideo5() {
+            video5.currentTime = 0;
+            video5.pause();
+        }
+        function rewindVideo5() {
+            video5.currentTime = 0;
+        }
+
+        video6 = document.querySelector('#Video6');
+        function playVideo6() {
+            video6.play();
+        }
+        function pauseVideo6() {
+            video6.pause();
+        }
+        function stopVideo6() {
+            video6.currentTime = 0;
+            video6.pause();
+        }
+        function rewindVideo6() {
+            video6.currentTime = 0;
+        }
+    </script>
+
+</body>
+
+</html>

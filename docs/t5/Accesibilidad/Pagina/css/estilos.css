@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(to left, rgb(0, 0, 0) , yellow);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.texto{
+    width:10%;
+}
+a{
+    margin: 10px;
+    font-size: 20px;
+}
+img{
+    width: 200px;
+}
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

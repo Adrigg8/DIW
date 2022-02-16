@@ -1,3 +1,4 @@
 body{
-    background-image: linear-gradient(to left, rgb(0, 0, 0) , yellow);
+    background-image: linear-gradient(to left, rgb(0, 0, 0) , yellow, black);
+    color: aliceblue;
 }
